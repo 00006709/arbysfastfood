@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Arby's Fast Food</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="main.css">
+	<link rel="shortcut icon" type="image/x-icon" href="images/hamburger.png"/>
+</head>
+<body>
+	<header class="menu-page">	
+		<div class="row">
+			<a href="index.html" class="logo-nav"><img src="images/logo.png"></a>
+			<ul class="nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="location.html">Location</a></li>
+				<li><a href="login.html">Log In | Sign Up</a></li>
+				<li class="phone"><img src="images/phone-call.png" width="35" height="35"> +998(71) 200 00 00</li>
+				<li class="basket"><a href="basket.html"><img src="images/basket.png" width="40" height="40"></a></li>
+			</ul>
+		</div>
+</header>
+<body>
+	<!-- checkout page started -->
+<div class="container">
+	<h1 class="text-center h1-checkout">Checkout Page</h1>
+	<form class="form-horizontal" id="checkout-form">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="form-group">
+					<label class="control-label">Name:</label>
+					<input id="name" type="text" placeholder="your name" class="form-control">
+				</div>
+				<div class="form-group">
+					<label class="control-label">Phone №: </label>
+					<input id="phone" type="text" placeholder="your number" class="form-control">
+				</div>
+				<div class="form-group">
+					<label class="control-label">Address: </label>
+					<input id="address" type="text" placeholder="city, street, house, apartment" class="form-control">
+				</div>
+				<div class="form-group">
+					<label>Type of delivery:</label>
+					<div class="radio">
+						<input type="radio" name="delivery">pickup
+					</div>
+					<div class="radio">
+						<input type="radio" name="delivery">free delivery
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label">Time of delivery:</label>
+					<div class="radio">
+						<label><input type="radio" name="time">now (within 30 min)</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="time">pre-order</label>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<label class="control-label">Type of payment:</label>
+					<div class="radio">
+						<label><input type="radio" name="payment">cash</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="payment">card</label>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label">Comments:</label>
+					<textarea rows="4" class="form-control" placeholder="any comments..." id="textarea"></textarea>
+				</div>
+				<div class="form-group">
+					<label class="control-label">Total cost:</label>
+					<div id="total_cost"></div>
+				</div>
+				<div class="form-group">
+					<button class="btn btn-dark" id="btn-check">Submit</button>
+				</div>
+			</div>
+		</div>
+	</form>
+		
+</div>
+<div class="clearfix"></div>
+<!-- footer section started -->
+<footer>
+	<div class="footer-social">
+		<ul>
+			<li><a href="https://facebook.com/" target="blank"><img src="images/facebook.png"></a></li>
+			<li><a href="https://twitter.com/" target="blank"><img src="images/twitter.png"></a></li>
+			<li><a href="https://web.telegram.org/" target="blank"><img src="images/telegram.png"></i></a></li>
+			<li><a href="https://instagram.com/" target="blank"><img src="images/instagram.png"></i></a></li>
+		</ul>
+	</div>
+	<div class="footer-menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="menu.html">Menu</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="location.html">Location</a></li>
+			<li><a href="login.html">Log In | Sign Up</a></li>
+		</ul>
+	</div>
+	<div class="footer-bottom">
+		<p>This	web	site was created to fulfill	Web	Technologies module’s requirements and does not represent actual company or service. <br> For more information, please read <a href="00006709.pdf" target="blank">this file</a> <br> 00006709</p>
+	</div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="script.js"></script>
+<script src="menu.js"></script>
+<script type="text/javascript">
+	var $ = (arg) => document.querySelector(arg);
+
+	window.onload = () => {
+
+		let total = localStorage.getItem('total');
+		let total_value;
+
+		if (total == null) {
+			console.log('error');
+		} else {
+			total_value = JSON.parse(total)
+		} 	
+
+		for (total_sum of total_value) {
+			var total_sum_id = document.getElementById("total_cost");
+			total_sum_id.innerHTML = "$ " + total_sum.total;
+		}
+
+	}
+
+	var btn = document.getElementById("btn-check");
+	btn.addEventListener('click', function(event){
+		event.preventDefault();
+
+		var name = document.getElementById('name').value;
+		var phone = document.getElementById('phone').value;
+		var address = document.getElementById('address').value;
+		var textarea = document.getElementById('textarea').value;
+
+		if (name === "" && phone === "" && address === "" && textarea === "") {
+			alert('Please fill all required fields');
+		}else{
+			alert('Your ordered successfully');
+		}
+
+	});
+	
+	
+		
+</script>
+<body>
+</html>

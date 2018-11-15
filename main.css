@@ -1,0 +1,445 @@
+﻿* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'ABeeZee', sans-serif;
+}
+
+.food {
+	position: absolute;
+	width: 100%;
+	top: 40%;
+	padding-left: 15%;
+} 
+h1 {
+	color: white;
+}
+
+header {
+	background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)) ,url(images/image.jpg);
+	height: 100vh;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+/*nav menu started*/
+.nav {
+	list-style: none;
+	float: right;
+	margin-top: 60px;
+	margin-left: 18%;
+}
+.nav li {
+	display: inline-block;
+	margin-left: 30px;
+}
+.nav li a {
+	color: white;
+	text-decoration: none;
+	font-size: 110%;
+	font-weight: bold;
+	padding-bottom: 10px; 
+}
+.nav li a:hover {
+	border-bottom: 1px white solid;
+	transition: .2s ease-in;
+}
+/*logo started*/
+.logo-nav {
+	margin-top: 2%;
+	margin-left: 100px;
+	float: left;
+	position: relative;
+}
+.phone {
+	color: white;
+	font-size: 12px;
+	padding-left: 150px;
+}
+#number {
+	color: white;
+	font-size: 15px;
+	margin-right: 5	0px;
+}
+#welcome_msg{
+	color: black;
+	margin-left: -15px;
+}
+/*2 buttons on main page started*/
+.btn {
+	border: 1px solid #fff;
+	border-radius: 10px;
+	padding: 10px 30px;
+	color: white;
+	text-decoration: none;
+	margin-right: 15px;
+	font-size: 110%;
+	font-weight: bold;
+}
+.button {
+	margin-top: 40px;
+}
+.btn:hover {
+	background-color: #fff;
+	color: #000;
+}
+/*text under main page started*/
+
+.features h3 {
+	padding:40px;
+	text-align: center;
+}
+/*3 column text started*/
+`.three {
+	text-align: justify;
+}
+.features .three-logo {
+	width: 80px;
+	height: 80px;
+	margin-left: 38%; 
+}
+.features h4 {
+	text-align: center;
+	padding-top: 10px;
+}
+/* 8 photos section started*/
+.gallery {
+	margin-left: 5%;
+	margin-top: 80px;
+}
+.photos {
+	list-style: none;
+	margin-top: 60px;
+}
+.photos li {
+	display: block;
+	width: 25%;
+	float: left;
+	overflow: hidden;
+}	
+.photo {
+	margin: 8px;
+}
+.img-size {
+	max-width: 280px;
+	overflow: hidden;
+}
+.photo img {
+	transition: .8s ease;
+	opacity: 0.9;
+}
+.photo img:hover {
+	transform: scale(1.3); 
+	overflow: hidden;
+}
+.clearfix{
+	clear: both;
+	height: 90px;
+}
+/*reviews section started*/
+.row {
+	margin-right: 0;
+}
+.reviews {
+	background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.6)),url(images/arby2.jpeg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 80px;
+	padding-bottom: 60px;
+	color: white;
+}
+.reviews p {
+	line-height: 25px;
+	text-align: justify;
+	margin-top: 30px;
+}
+.reviews cite img {
+	margin-right: 30px;
+}
+/*form for comment started*/
+.btn-block {
+	background-color: black;
+	color: white;
+	border-radius: 7px;
+	margin-top: 20px;
+	border-color: black;
+}
+.btn-block:hover {
+	border-color: #000;
+}
+.place {
+	margin-top: 45px;
+	padding-left: 500px;
+}
+section .form {
+	margin-top: 50px;
+}
+.form .container h3 {
+	margin-top: 50px;
+}
+/*footer started*/
+footer {
+
+	width: 100%;
+	height: auto;
+	background-color: black;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 20px 0;
+}
+.footer-social {
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+.footer-social ul {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+.footer-social ul li {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin: 10px 10px;
+	border-radius: 100%;
+}
+.footer-social ul li img{
+	font-size: 25px;
+	display: block;
+}
+.footer-social ul li a img {
+	line-height: 50px;
+}
+.footer-social ul li a img:hover {
+	width: 38px;
+	height: 38px;
+}
+.footer-menu {
+	width: 100%;
+	height: auto;
+	margin: auto;
+	margin-top: 15px;
+}
+.footer-menu ul {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+.footer-menu ul li {
+	display: inline-block;
+	margin: 0px 16px;
+}
+.footer-menu ul li a {
+	font-size: 15px;
+	font-weight: 500;
+	color: #fff;
+}
+.footer-bottom p {
+	color: white;
+	text-align: center;
+	margin-top: 25px;
+	font-size: 10px;
+}
+/*login sign up page started*/
+.login-header {
+	background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)) ,url(images/arby2.jpeg);
+}
+.login-page {
+	width: 360px;
+	padding: 3% 0 0;
+	margin: auto;
+}
+header .form {
+	position: relative;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.5);
+	max-width: 360px;
+	margin: 0 auto 100px;
+	padding: 45px;
+	text-align: center;
+	border-radius: 15px;
+}
+header .form input {
+	font-family: "Roboto", sans-serif;
+	outline: 1;
+	background: #fff;
+	width: 100%;
+	border: 0;
+	margin: 10px 0 35px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+header .form button {
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	outline: 0;
+	background: #fff;
+	width: 50%;
+	border: 0;
+	border-radius: 18px;
+	padding: 11px;
+	color: #000;
+	font-size: 14px;
+	cursor: pointer;
+}
+header .form button:hover {
+	background-color: black;
+	border: 1px solid #fff;
+	color: #fff;f
+}
+header .form .message {
+	margin: 15px 0 0;
+	color: #fff;
+	font-size: 13px;
+}
+header .form .message a {
+	color: #fff;
+	text-decoration: underline;
+	font-size: 14px;
+}
+.form .signup-form {
+	display: none;
+}
+
+/*menu page*/
+.menu-section{
+	width: 80%;
+}
+.menu-page {
+	background-image: none;
+	background-color: #000;
+	height: 20vh;
+	width: 100%;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+}
+.whole_block{
+	margin: 30px;
+}
+.product_image{
+	width: 100%;
+	height: 150px;
+}
+.menu-h2 {
+	text-align:center;
+	color: #000;
+}
+.price {
+  color: black;
+  font-size: 22px;
+}
+.h4 {
+	margin-top: 30px;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+/*History page started*/
+.about-page {
+	background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)) ,url(images/about-back.jpg);
+}
+.about-main h1 {
+	font-size: 50px;
+	font-weight: bold;
+	margin-top: 15%;
+	color: #fff
+	word-spacing: 5px;
+	line-height: 2;
+}
+.about-main h2 {
+	font-size: 25px;
+	color: #fff;
+}
+.about-container {
+	font-weight: 100;
+	margin: 48px auto;
+	width: 50rem;
+	text-align: justify;
+}
+.title h1 {
+	color: black;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.about-image img {
+	width: 25rem;
+	height: 20rem;
+	margin-left: 24%;
+	margin-bottom: 30px;
+}
+/*location page started*/
+.location-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 60px 90px 0 0;
+  text-align: center;
+  width: 30%;
+}
+.location {
+	margin-left: 250px;
+}
+.location-card button {
+  border-radius: 5px;
+  padding: 12px;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.location-h2 {
+	color: #000;
+	text-align: center;
+	margin-top: 1.2em;
+}
+.location-card button:hover {
+  color: #000;
+  background-color: #fff;
+  border: 2px black solid;
+}
+/*special offers page started*/
+.offers-page {
+	background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)) ,url(images/girls.jpg);
+}
+.offer {
+	float: left;
+	width: 100%;
+}
+article {
+	float: left;
+	margin-left: 150px;
+	width: 40%;
+	height: auto;
+}
+aside {
+	float: right;
+	margin-right: 150px;
+	width: 40%;
+	height: auto;
+}
+.inner-wrapper p{
+	line-height: 1.9;
+	margin-top: 30px;
+}
+/*basket-page*/
+.h1-checkout {
+	color: black;
+	font-size: 2.3rem;
+	margin-top: 1.3rem;
+	margin-bottom: 2.3rem;
+}
+.form-horizontal {
+	margin-left: 6rem;
+}
